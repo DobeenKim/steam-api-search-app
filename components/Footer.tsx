@@ -7,7 +7,7 @@ const Footer = () => {
         maxWidth={false}
         sx={{maxWidth: '1850px !important', 
         width: '100%'}}>
-        <Grid container spacing={4} justifycontent="space-between">
+        <Grid container spacing={4} sx={{ justifyContent: 'space-between' }}>
         <Grid size={{ xs: 12, sm: 4 }}>
             <Typography variant="h6" gutterBottom sx={{ fontWeight: 'bold' }}>
               STEAM SEARCH
