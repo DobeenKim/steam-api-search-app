@@ -8,13 +8,15 @@ const Footer = () => {
         sx={{maxWidth: '1850px !important', 
         width: '100%'}}>
         <Grid container spacing={4} sx={{ justifyContent: 'space-between' }}>
-        <Grid size={{ xs: 12, sm: 4 }}>
-            <Typography variant="h6" gutterBottom sx={{ fontWeight: 'bold' }}>
-              STEAM SEARCH
-            </Typography>
-            <Typography variant="body2" sx={{ color: '#8f98a0' }}>
-              Discover your favorite games using the official Steam Store API.
-            </Typography>
+        <Grid container 
+          spacing={4} 
+          sx={{ justifyContent: 'space-between' }}>
+          <Typography variant="h6" gutterBottom sx={{ fontWeight: 'bold' }}>
+            STEAM SEARCH
+          </Typography>
+          <Typography variant="body2" sx={{ color: '#8f98a0' }}>
+            Discover your favorite games using the official Steam Store API.
+          </Typography>
           </Grid>
         </Grid>
         <Divider sx={{ my: 4, bgcolor: '#303943' }} />
