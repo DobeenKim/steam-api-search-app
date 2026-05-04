@@ -48,7 +48,7 @@ const TopGames = () => {
                     sx={{display:"flex", justifyContent:"center"}}
                 >
                     { getGame && getGame.slice(0,50).map((item, index) => (
-                        <Grid  xs={12} sm={6} md={4} lg={3}  key={index}>
+                        <Grid size={{xs:12, sm:6, md:4, lg:3}}  key={index}>
                             <Card sx={{height:'100%',display:'flex',flexDirection:'column', maxWidth: 320 }}>
                                 <CardActionArea>
                                     <CardMedia
