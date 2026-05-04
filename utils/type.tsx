@@ -2,6 +2,6 @@ export type steamType = {
     appid: number;
     name:string,
     developer:string,
-    price: string | number
-
+    price: string | number,
+    tiny_image: string;
 }
