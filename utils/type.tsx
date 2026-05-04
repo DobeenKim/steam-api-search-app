@@ -3,6 +3,6 @@ export type steamType = {
     name:string,
     developer:string,
     price: string | number,
-    tiny_image: string;,
+    tiny_image: string,
     id: number | string;
 }
