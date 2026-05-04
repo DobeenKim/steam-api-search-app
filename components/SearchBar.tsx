@@ -1,7 +1,7 @@
 'use client'
 
 import {useState, useEffect} from "react"
-import {steamType} from "../utils/typet"
+import {steamType} from "../utils/type"
 import { TextField, Box, Typography } from "@mui/material"
 import Card from '@mui/material/Card';
 import CardContent from '@mui/material/CardContent';
