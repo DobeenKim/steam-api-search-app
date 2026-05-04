@@ -1,7 +1,7 @@
 'use client'
 
 import {useState, useEffect} from "react"
-import {steamType} from "@/utils/type"
+import {steamType} from "../utils/type"
 import { TextField, Box, Typography } from "@mui/material"
 import Card from '@mui/material/Card';
 import CardContent from '@mui/material/CardContent';
@@ -61,6 +61,7 @@ const SearchBar = () => {
                         height="160"
                         image={results.tiny_image}
                         alt={results.name}
+                        sx={{ objectFit:'cover'}}
                     />
                     <CardContent>
                     <Typography gutterBottom variant="h5" component="div">
