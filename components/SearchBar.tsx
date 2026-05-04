@@ -30,7 +30,7 @@ const SearchBar = () => {
                     setResults(data.items[0])
                     
                 } else {
-                    setResults("Not found")
+                    setResults(null)
                 }
             } catch (error) {
                 console.log(error)
