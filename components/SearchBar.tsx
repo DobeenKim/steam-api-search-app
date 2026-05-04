@@ -1,7 +1,7 @@
 'use client'
 
 import {useState, useEffect} from "react"
-import {steamType} from "../utils/type"
+import {steamType} from "../utils/typet"
 import { TextField, Box, Typography } from "@mui/material"
 import Card from '@mui/material/Card';
 import CardContent from '@mui/material/CardContent';
@@ -10,7 +10,7 @@ import CardActionArea from '@mui/material/CardActionArea';
 
 const SearchBar = () => {
     const [value, setValue] = useState<string>('');
-    const [results, setResults] =useState<steamType>(null);
+    const [results, setResults] =useState<steamType | null>(null);
     const handleChange = e => {
         setValue(e.target.value)
     }
