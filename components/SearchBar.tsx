@@ -11,7 +11,7 @@ import CardActionArea from '@mui/material/CardActionArea';
 const SearchBar = () => {
     const [value, setValue] = useState<string>('');
     const [results, setResults] =useState<steamType | null>(null);
-    const handleChange = e => {
+    const handleChange = (e:any) => {
         setValue(e.target.value)
     }
 
