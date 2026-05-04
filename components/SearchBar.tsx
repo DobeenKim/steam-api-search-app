@@ -41,7 +41,7 @@ const SearchBar = () => {
 
     return (
         <>
-        <Box sx={{ p: 3, display:'flex', flexDirection:'column', gap:'16px', width:'90%', margin: '0 auto' }}>
+        <Box sx={{ p: 3, display:'flex', flexDirection:'column', gap:'16px' }}>
             <TextField 
                 label="Search" 
                 variant="outlined" 
