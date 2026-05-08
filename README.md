@@ -1,36 +1,28 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+<h2>Steam Search</h2>
 
-## Getting Started
+<h4>A web application that allows users to search for game information and check trending titles using the official Steam Store API and SteamSpy data.</h4>
 
-First, run the development server:
+<br>
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+<h3>Key Features</h3>
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+<p>Game Search: Real-time game data fetching via Steam Store API.</p>
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+<p>Top Games Ranking: Displaying the top 50 trending games using SteamSpy API.</p>
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+<p>MUI-based UI: Clean and organized game data presentation using Material UI cards.</p>
 
-## Learn More
+<br>
+<h3>Tech Stack<h3>
 
-To learn more about Next.js, take a look at the following resources:
+<p>Framework: Next.js</p>
+<p>UI Library: Material UI (MUI)</p>
+<p>Language: TypeScript</p>
+<p>APIs: Steam Store API & SteamSpy API</p>
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+<br>
+<h3>Live Demo</h3>
+<p>Link: https://steam-api-search-app.vercel.app/</p>
+<br>
+<br>
+<img width="1903" height="1108" alt="steam" src="https://github.com/user-attachments/assets/30fdec85-969b-4f6f-a811-c4423e57e9d5" />
