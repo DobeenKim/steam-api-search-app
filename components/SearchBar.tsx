@@ -105,9 +105,9 @@ const SearchBar = () => {
                                 </Typography>
                                 <Typography variant="body2" 
                                     sx={{
-                                        color: 'text.secondary' 
+                                        color:'var(--text-dark)' 
                                     }}>
-                            {results.id}
+                                    {results.id}
                                 </Typography>
                             </CardContent>
                         </CardActionArea>

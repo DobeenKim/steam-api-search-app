@@ -11,10 +11,11 @@ export default function Home() {
     }}>
       <Typography sx={{
         maxWidth: { 
-          xs: '300px',             
+          xs: '350px',             
           sm: '700px',              
           lg: '1500px'             
         },
+        pb:'30px',
         margin: "0 auto"
       }}>
         <Typography sx={{
