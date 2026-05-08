@@ -67,7 +67,7 @@ const SearchBar = () => {
                         borderColor: "var(--border-color)",
                     },
                     "&:hover fieldset": {
-                        borderColor: "var(--border-color)", 
+                        borderColor: "var(--point-color)", 
                     },
                     "&.Mui-focused fieldset": {
                         borderColor: "var(--border-color)",
@@ -75,6 +75,9 @@ const SearchBar = () => {
                     },
                     "& .MuiInputLabel-root": {
                     color: "var(--border-color)",
+                    },
+                    "&:hover .MuiInputLabel-root": {
+                    color: "var(--point-color)",
                     },
                     "& .MuiInputLabel-root.Mui-focused": {
                     color: "var(--border-color)",
