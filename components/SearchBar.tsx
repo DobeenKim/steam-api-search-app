@@ -81,27 +81,38 @@ const SearchBar = () => {
                     }
                 }}
             />
-            {results && typeof results === 'object' && (
-                <Card sx={{ height:'100%',display:'flex',flexDirection:'column', maxWidth: 320  }}>
-                <CardActionArea>
-                    <CardMedia
-                        component="img"
-                        height="160"
-                        image={results.tiny_image}
-                        alt={results.name}
-                        sx={{ objectFit:'cover'}}
-                    />
-                    <CardContent>
-                    <Typography gutterBottom variant="h5" component="div">
-                        {results.name}
-                    </Typography>
-                    <Typography variant="body2" sx={{ color: 'text.secondary' }}>
+                {results && typeof results === 'object' && (
+                    <Card sx={{
+                        height:'100%',
+                        display:'flex',
+                        flexDirection:'column', 
+                        maxWidth: 390, 
+                        backgroundColor: 'var(--bg-deeper-navy)',
+                        color:'var(--text-bright)'  ,
+                        mt:'8px'
+                        }}>
+                        <CardActionArea>
+                            <CardMedia
+                                component="img"
+                                height="160"
+                                image={results.tiny_image}
+                                alt={results.name}
+                                sx={{ objectFit:'cover'}}
+                            />
+                            <CardContent>
+                                <Typography gutterBottom variant="h5" component="div">
+                                    {results.name}
+                                </Typography>
+                                <Typography variant="body2" 
+                                    sx={{
+                                        color: 'text.secondary' 
+                                    }}>
                             {results.id}
-                    </Typography>
-                    </CardContent>
-                </CardActionArea>
-                </Card>
-            )}
+                                </Typography>
+                            </CardContent>
+                        </CardActionArea>
+                    </Card>
+                )}
         </Box>
         </>
     )
