@@ -43,13 +43,34 @@ const TopGames = () => {
 
     return (
         <>
-            <Box sx={{ flexGrow: 1, p:3 }}>
+            <Typography sx={{
+                py:'28px'
+            }}>
+                <Typography sx={{
+                    fontSize:'24px',
+                    color:'var(--text-bright)',
+                }}>Top owners - last 2weeks
+                </Typography>
+                <Typography sx={{
+                    fontSize:'14px',
+                    color:'var(--text-dark)',
+                }}>Data via SteamSpy
+                </Typography>
+            </Typography>
+            <Box sx={{ flexGrow: 1}}>
                 <Grid container spacing={{ xs: 2, md: 3}} 
                     sx={{display:"flex", justifyContent:"center"}}
                 >
                     { getGame && getGame.slice(0,50).map((item, index) => (
-                        <Grid size={{xs:12, sm:6, md:4, lg:2}}  key={index}>
-                            <Card sx={{height:'100%',display:'flex',flexDirection:'column', maxWidth: 320 }}>
+                        <Grid size={{xs:12, sm:4, md:3, lg:3}}  key={index}>
+                            <Card sx={{
+                                height:'100%',
+                                display:'flex',
+                                flexDirection:'column', 
+                                maxWidth: 390, 
+                                backgroundColor: 'var(--bg-deeper-navy)',
+                                color:'var(--text-bright)'
+                                }}>
                                 <CardActionArea>
                                     <CardMedia
                                         component="img"
@@ -58,11 +79,14 @@ const TopGames = () => {
                                         alt={item.name}
                                         sx={{ objectFit:'cover'}}
                                     />
-                                    <CardContent>
+                                    <CardContent >
                                         <Typography gutterBottom variant="h5" component="div">
                                             {item.name}
                                         </Typography>
-                                        <Typography variant="body2" sx={{ color: 'text.secondary' }}>
+                                        <Typography variant="body2"
+                                            sx={{
+                                                color:'var(--text-dark)',
+                                                }}>
                                             {item.developer}
                                         </Typography>
                                     </CardContent>

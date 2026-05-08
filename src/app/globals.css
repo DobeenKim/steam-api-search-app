@@ -2,6 +2,17 @@
   box-sizing: border-box;
 }
 
+:root {
+  --bg-color:#1B2838;
+  --bg-deeper-navy:#18202B;
+  --text-bright:#C7D5E0;
+  --text-dark:#69737E;
+  --border-color:#434E5B;
+  --border-color2:#2B475E;
+}
+
 body {
   margin: 0;
+  background-color: var(--bg-color);
 }
+

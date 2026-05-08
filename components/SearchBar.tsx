@@ -41,7 +41,18 @@ const SearchBar = () => {
 
     return (
         <>
-        <Box sx={{ p: 3, display:'flex', flexDirection:'column', gap:'16px' }}>
+        <Typography sx={{
+            fontSize:"1.5rem",
+            color:'var(--text-bright)',
+            pt:'33px',
+            pb:'24px'
+            }}>Find a game
+        </Typography>
+        <Box sx={{
+            display:'flex', 
+            flexDirection:'column', 
+            pb:'28px',
+            }}>
             <TextField 
                 label="Search" 
                 variant="outlined" 
@@ -50,7 +61,24 @@ const SearchBar = () => {
                 onChange={handleChange} 
                 autoFocus 
                 sx={{ 
-                    width: { xs: '100%', sm: '320px' }, 
+                    maxwidth:'460px',
+                    "& .MuiOutlinedInput-root": {
+                    "& fieldset": {
+                        borderColor: "var(--border-color)",
+                    },
+                    "&:hover fieldset": {
+                        borderColor: "var(--border-color)", 
+                    },
+                    "&.Mui-focused fieldset": {
+                        borderColor: "var(--border-color)",
+                    },
+                    },
+                    "& .MuiInputLabel-root": {
+                    color: "var(--border-color)",
+                    },
+                    "& .MuiInputLabel-root.Mui-focused": {
+                    color: "var(--border-color)",
+                    }
                 }}
             />
             {results && typeof results === 'object' && (
