@@ -42,10 +42,16 @@ const SearchBar = () => {
     return (
         <>
         <Typography sx={{
-            fontSize:"1.5rem",
-            color:'var(--text-bright)',
+            fontSize:"11px",
+            color:'var(--point-color)',
             pt:'33px',
-            pb:'24px'
+            pb:'19px',
+            }}>STORE SEARCH
+        </Typography>
+        <Typography sx={{
+            fontSize:'20px',
+            color:'var(--text-bright)',
+            pb:'19px'
             }}>Find a game
         </Typography>
         <Box sx={{
@@ -124,6 +130,10 @@ const SearchBar = () => {
                     </Card>
                 )}
         </Box>
+        <Typography 
+            sx={{color:'var(--text-dark)'  ,}}>
+            Click a card for store details
+        </Typography>
         </>
     )
 }

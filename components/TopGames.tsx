@@ -46,10 +46,16 @@ const TopGames = () => {
     return (
         <>
             <Box sx={{
-                py:'28px'
+                py:'38px'
             }}>
                 <Typography sx={{
-                    fontSize:'24px',
+                            fontSize:"11px",
+                            color:'var(--point-color)',
+                            pb:'19px',
+                            }}>TRENDING
+                        </Typography>
+                <Typography sx={{
+                    fontSize:'20px',
                     color:'var(--text-bright)',
                 }}>Top owners - last 2weeks
                 </Typography>

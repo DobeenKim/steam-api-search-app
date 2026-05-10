@@ -26,13 +26,18 @@ export default function Home() {
         }}>
           <Typography sx={{
             color:'var(--text-bright)',
-            fontSize:'2.5rem'
+            fontSize:'36px'
           }}>Steam discovery
           </Typography>
           <Typography sx={{
-            fontSize:'0.875rem',
+            fontSize:'15px',
             color:'var(--text-dark)'
-          }}>Search the Steam catalog and browse trending titles from SteamSpy rich details <br />from the SteamStore API.
+          }}>Search the Steam catalog and browse trending titles from SteamSpy rich details from the SteamStore API - rich details
+          <Box 
+            component="br" 
+            sx={{ display: { xs: 'none', sm: 'block' } }} 
+          />
+          from the Steam API
           </Typography>
         </Box>
         <SearchBar />
