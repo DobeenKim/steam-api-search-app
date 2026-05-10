@@ -1,6 +1,7 @@
 'use client'
 
 import {useState, useEffect} from "react"
+import { steamType } from "../utils/type";
 import { Box } from '@mui/material';
 import { styled } from '@mui/material/styles';
 import Paper from '@mui/material/Paper';
@@ -12,7 +13,7 @@ import Typography from '@mui/material/Typography';
 import CardActionArea from '@mui/material/CardActionArea';
 
 const TopGames = () => {
-    const [getGame, setGetGame] =useState<any[]>([])
+    const [getGame, setGetGame] =useState<steamType[]>([])
 
     const getGames = async() => {
         try {
