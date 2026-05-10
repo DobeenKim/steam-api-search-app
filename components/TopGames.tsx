@@ -1,6 +1,7 @@
 'use client'
 
 import {useState, useEffect} from "react"
+import Link from "next/link"
 import { steamType } from "../utils/type";
 import { Box } from '@mui/material';
 import { styled } from '@mui/material/styles';
@@ -72,7 +73,12 @@ const TopGames = () => {
                                 backgroundColor: 'var(--bg-deeper-navy)',
                                 color:'var(--text-bright)'
                                 }}>
-                                <CardActionArea>
+                                <CardActionArea 
+                                    LinkComponent={Link}
+                                    href={`https://store.steampowered.com/app/${item.appid}`}
+                                    target="_blank"
+                                    rel="noopener noreferrer"
+                                >
                                     <CardMedia
                                         component="img"
                                         height="160"

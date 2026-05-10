@@ -2,6 +2,7 @@
 
 import {useState, useEffect} from "react"
 import {steamType} from "../utils/type"
+import Link from 'next/link';
 import { TextField, Box, Typography } from "@mui/material"
 import Card from '@mui/material/Card';
 import CardContent from '@mui/material/CardContent';
@@ -28,7 +29,6 @@ const SearchBar = () => {
                 
                 if(data && data.items && data.items.length > 0) {
                     setResults(data.items[0])
-                    
                 } else {
                     setResults(null)
                 }
@@ -92,10 +92,17 @@ const SearchBar = () => {
                         maxWidth: 390, 
                         backgroundColor: 'var(--bg-deeper-navy)',
                         color:'var(--text-bright)'  ,
-                        mt:'8px'
-                        }}>
-                        <CardActionArea>
-                            <CardMedia
+                        mt:'8px',
+                        position: 'relative',
+                        }}
+                    >
+                        <CardActionArea 
+                            LinkComponent={Link}
+                            href={`https://store.steampowered.com/app/${results.id}`}
+                            target="_blank"
+                            rel="noopener noreferrer"
+                        >
+                            <CardMedia 
                                 component="img"
                                 height="160"
                                 image={results.tiny_image}
