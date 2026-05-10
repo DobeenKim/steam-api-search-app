@@ -22,7 +22,7 @@ const TopGames = () => {
             const data = await response.json()
 
             const gameArray = Object.values(data)
-            setGetGame(gameArray)
+            setGetGame(gameArray) as steamType[]
             } catch(error) {
                 console.log(error)
         }
