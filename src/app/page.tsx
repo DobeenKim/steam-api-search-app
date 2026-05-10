@@ -3,13 +3,14 @@ import styles from "./page.module.css";
 import TopGames from "../../components/TopGames"
 import SearchBar from "../../components/SearchBar"
 import Typography from '@mui/material/Typography';
+import Box from '@mui/material/Box'; // Box를 임포트하세요
 
 export default function Home() {
   return (
-    <Typography sx={{
+    <Box  sx={{
       with:"100%"
     }}>
-      <Typography sx={{
+      <Box sx={{
         maxWidth: { 
           xs: '350px',             
           sm: '700px',              
@@ -18,7 +19,7 @@ export default function Home() {
         pb:'30px',
         margin: "0 auto"
       }}>
-        <Typography sx={{
+        <Box sx={{
           borderBottom: '1px solid var(--border-color2)',
           pt:'50px',
           pb:'40px'
@@ -33,10 +34,10 @@ export default function Home() {
             color:'var(--text-dark)'
           }}>Search the Steam catalog and browse trending titles from SteamSpy rich details <br />from the SteamStore API.
           </Typography>
-        </Typography>
+        </Box>
         <SearchBar />
         <TopGames />
-      </Typography>
-    </Typography>
+      </Box>
+    </Box>
   );
 }

@@ -43,7 +43,7 @@ const TopGames = () => {
 
     return (
         <>
-            <Typography sx={{
+            <Box sx={{
                 py:'28px'
             }}>
                 <Typography sx={{
@@ -56,7 +56,7 @@ const TopGames = () => {
                     color:'var(--text-dark)',
                 }}>Data via SteamSpy
                 </Typography>
-            </Typography>
+            </Box>
             <Box sx={{ flexGrow: 1}}>
                 <Grid container spacing={{ xs: 2, md: 3}} 
                     sx={{display:"flex", justifyContent:"center"}}
