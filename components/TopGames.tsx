@@ -21,8 +21,8 @@ const TopGames = () => {
             const response = await fetch('/api/steam')
             const data = await response.json()
 
-            const gameArray = Object.values(data)
-            setGetGame(gameArray) as steamType[]
+            const gameArray = Object.values(data) as steamType[]
+            setGetGame(gameArray) 
             } catch(error) {
                 console.log(error)
         }
