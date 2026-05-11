@@ -25,4 +25,4 @@
 <p>Link: https://steam-api-search-app.vercel.app/</p>
 <br>
 <br>
-<img width="1903" height="1108" alt="steam" src="https://github.com/user-attachments/assets/30fdec85-969b-4f6f-a811-c4423e57e9d5" />
+<img width="1905" height="1112" alt="steam-img" src="https://github.com/user-attachments/assets/3e3e7498-b769-449a-97f5-06576c9a721b" />
