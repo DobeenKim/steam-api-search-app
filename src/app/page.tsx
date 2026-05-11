@@ -3,7 +3,7 @@ import styles from "./page.module.css";
 import TopGames from "../../components/TopGames"
 import SearchBar from "../../components/SearchBar"
 import Typography from '@mui/material/Typography';
-import Box from '@mui/material/Box'; // Box를 임포트하세요
+import Box from '@mui/material/Box'; 
 
 export default function Home() {
   return (
