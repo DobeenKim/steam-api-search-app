@@ -113,7 +113,7 @@ const SearchBar = () => {
                                 height="160"
                                 image={results.tiny_image}
                                 alt={results.name}
-                                sx={{ objectFit:'cover'}}
+                                sx={{ objectFit:'contain'}}
                             />
                             <CardContent>
                                 <Typography gutterBottom variant="h5" component="div">
